@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -115,7 +115,7 @@ figure {
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 1;
+  /*z-index: 1;*/
   background: rgba(41, 34, 43, 0.5);
 }
 
@@ -139,7 +139,7 @@ figure {
   }
 }
 .fh5co-cover .desc {
-  top: 50%;
+  top: 85%;
   position: absolute;
   width: 100%;
   margin-top: -80px;
