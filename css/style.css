@@ -115,7 +115,7 @@ figure {
   left: 0;
   bottom: 0;
   right: 0;
-  /*z-index: 1;*/
+  z-index: 1;
   background: rgba(41, 34, 43, 0.5);
 }
 
@@ -139,7 +139,7 @@ figure {
   }
 }
 .fh5co-cover .desc {
-  top: 85%;
+  top: 88%;
   position: absolute;
   width: 100%;
   margin-top: -80px;
@@ -331,7 +331,7 @@ figure {
   width: 100%;
 }
 
-#fh5co-logo {
+.fh5co-logo {
   position: relative;
   z-index: 2;
   font-size: 22px;
@@ -340,20 +340,20 @@ figure {
   font-weight: 700;
   float: left;
 }
-#fh5co-logo span {
+.fh5co-logo span {
   font-weight: 700;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-logo {
+  .fh5co-logo {
     width: 100%;
     float: none;
     text-align: center;
   }
 }
-#fh5co-logo a {
+.fh5co-logo a {
   color: #fff;
 }
-#fh5co-logo a:hover, #fh5co-logo a:focus {
+.fh5co-logo a:hover, .fh5co-logo a:focus {
   color: #fff !important;
 }
 
