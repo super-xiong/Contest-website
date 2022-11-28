@@ -225,36 +225,40 @@
 									</li>
 									<li>
 										<a id="a1" class="fh5co-sub-ddown" style="cursor: pointer">活动</a>
-										<script>
-											var a = document.querySelector('#a1');
-											a.addEventListener('click',function(){
-												donghua(window,760,function(){
+<!--										<script>-->
 
-												});
-											})
-											function donghua(obj,abc,hanshu) {
-												// 回调函数
-												// Math.ceil是内置的向上取整函数
-												// var qqq = Math.ceil((abc - div.offsetLeft)/10);
-												let qqq = null;
+<!--											var a = document.querySelector('#a1');-->
+<!--											a.addEventListener('click',function(){-->
+<!--												sessionStorage.setItem("function","one");-->
+<!--												 const win = window.location.href="index.html";-->
 
-												clearInterval(obj.time);
-												obj.time = setInterval(function() {
-													qqq = (abc - obj.pageYOffset)/10;
-													qqq = qqq > 0 ? Math.ceil(qqq) : Math.floor(qqq);
-													if(obj.pageYOffset >= abc) {
-														clearInterval(obj.time);
-														// 在定时器结束后，动画运动完成后执行的函数
-														if(hanshu){
-															hanshu();
-														}
-													}else {
-														// obj.style.left = obj.pageYOffset + qqq +  'px';
-														obj.scroll(obj,obj.pageYOffset + qqq);
-													}
-												},10)
-											}
-										</script>
+<!--												donghua(window,760,function(){-->
+
+<!--												});-->
+<!--											})-->
+<!--											function donghua(obj,abc,hanshu) {-->
+<!--												// 回调函数-->
+<!--												// Math.ceil是内置的向上取整函数-->
+<!--												// var qqq = Math.ceil((abc - div.offsetLeft)/10);-->
+<!--												let qqq = null;-->
+
+<!--												clearInterval(obj.time);-->
+<!--												obj.time = setInterval(function() {-->
+<!--													qqq = (abc - obj.pageYOffset)/10;-->
+<!--													qqq = qqq > 0 ? Math.ceil(qqq) : Math.floor(qqq);-->
+<!--													if(obj.pageYOffset >= abc) {-->
+<!--														clearInterval(obj.time);-->
+<!--														// 在定时器结束后，动画运动完成后执行的函数-->
+<!--														if(hanshu){-->
+<!--															hanshu();-->
+<!--														}-->
+<!--													}else {-->
+<!--														// obj.style.left = obj.pageYOffset + qqq +  'px';-->
+<!--														obj.scroll(obj,obj.pageYOffset + qqq);-->
+<!--													}-->
+<!--												},10)-->
+<!--											}-->
+<!--										</script>-->
 										<ul class="fh5co-sub-menu">
 											<li><a href="http://www.3chuang.net/" target="_blank">三创赛</a></li>
 											<li><a href="./txt.html" target="_blank">"物网"初"芯"大赛</a></li>

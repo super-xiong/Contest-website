@@ -73,36 +73,48 @@
 								</li>
 								<li>
 									<a id="a1" class="fh5co-sub-ddown" style="cursor: pointer">活动</a>
-									<script>
-										var a = document.querySelector('#a1');
-										a.addEventListener('click',function(){
-											donghua(window,760,function(){
+<!--									<script>-->
+<!--										window.onload = function(){-->
+<!--											var funct= sessionStorage.getItem("function");-->
+<!--											if(funct=='one')-->
+<!--											{-->
 
-											});
-										})
-										function donghua(obj,abc,hanshu) {
-											// 回调函数
-											// Math.ceil是内置的向上取整函数
-											// var qqq = Math.ceil((abc - div.offsetLeft)/10);
-											let qqq = null;
+<!--													donghua(window,760,function(){-->
+<!--														sessionStorage.setItem("function","null");-->
+<!--													});-->
 
-											clearInterval(obj.time);
-											obj.time = setInterval(function() {
-												qqq = (abc - obj.pageYOffset)/10;
-												qqq = qqq > 0 ? Math.ceil(qqq) : Math.floor(qqq);
-												if(obj.pageYOffset >= abc) {
-													clearInterval(obj.time);
-													// 在定时器结束后，动画运动完成后执行的函数
-													if(hanshu){
-														hanshu();
-													}
-												}else {
-													// obj.style.left = obj.pageYOffset + qqq +  'px';
-													obj.scroll(obj,obj.pageYOffset + qqq);
-												}
-											},10)
-										}
-									</script>
+
+<!--											}-->
+<!--										}-->
+<!--										var a = document.querySelector('#a1');-->
+<!--										a.addEventListener('click',function(){-->
+<!--											donghua(window,760,function(){-->
+
+<!--											});-->
+<!--										})-->
+<!--										function donghua(obj,abc,hanshu) {-->
+<!--											// 回调函数-->
+<!--											// Math.ceil是内置的向上取整函数-->
+<!--											// var qqq = Math.ceil((abc - div.offsetLeft)/10);-->
+<!--											let qqq = null;-->
+
+<!--											clearInterval(obj.time);-->
+<!--											obj.time = setInterval(function() {-->
+<!--												qqq = (abc - obj.pageYOffset)/10;-->
+<!--												qqq = qqq > 0 ? Math.ceil(qqq) : Math.floor(qqq);-->
+<!--												if(obj.pageYOffset >= abc) {-->
+<!--													clearInterval(obj.time);-->
+<!--													// 在定时器结束后，动画运动完成后执行的函数-->
+<!--													if(hanshu){-->
+<!--														hanshu();-->
+<!--													}-->
+<!--												}else {-->
+<!--													// obj.style.left = obj.pageYOffset + qqq +  'px';-->
+<!--													obj.scroll(obj,obj.pageYOffset + qqq);-->
+<!--												}-->
+<!--											},10)-->
+<!--										}-->
+<!--									</script>-->
 									<ul class="fh5co-sub-menu">
 										<li><a href="http://www.3chuang.net/" target="_blank">三创赛</a></li>
 										<li><a href="./txt.html" target="_blank">"物网"初"芯"大赛</a></li>
@@ -147,9 +159,9 @@
 			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/资源12.png);">
 				<div class="fh5co-cover text-center"  style="height: 400px; width:1000px; z-index:2;background-image: url(images/资源8.png);left: 50%;top:50%;transform:translate(-50%,-70%)" ></div>
 				<div class="desc animate-box">
-					<h2 style="display:none"> 最是人间留不住,<strong>iCAN</strong> 辞镜花辞树</h2>
-					<span style="display:none">我们治愈愿意自渡的人 <a href="#" target="_blank" class="fh5co-site-name">--李雄</a></span>
-					<p><a class="btn btn-primary btn-lg btn-learn" href="#">Learn More</a> <a class="btn btn-primary btn-lg popup-vimeo btn-video" href="images/招新宣传视频.mp4"><i class="icon-play"></i> 社团简介</a></p>
+<!--					<h2 style="display:none"> 最是人间留不住,<strong>iCAN</strong> 辞镜花辞树</h2>-->
+<!--					<span style="display:none">我们治愈愿意自渡的人 <a href="#" target="_blank" class="fh5co-site-name">&#45;&#45;李雄</a></span>-->
+					<p><a class="btn btn-primary btn-lg btn-learn" href="about.html">Learn More</a> <a class="btn btn-primary btn-lg popup-vimeo btn-video" href="images/招新宣传视频.mp4"><i class="icon-play"></i> 社团简介</a></p>
 				</div>
 			</div>
 
